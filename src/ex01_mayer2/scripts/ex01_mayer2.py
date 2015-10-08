@@ -13,10 +13,14 @@ from sensor_msgs.msg import LaserScan
 
 gStartCollision = False
 gTurnDirection = 0
+kOutterSamples = 20
+gDirection = ""
 
 def callback( sensor_data ):
 	global gStartCollision
 	global gTurnDirection
+	global kOutterSamples
+	global gDirection
 	#sensor_data (LaserScan data type) has the laser scanner data
 	#base_data (Twist data type) created to control the base robot
 	collision = False
@@ -29,10 +33,10 @@ def callback( sensor_data ):
 	
 	for index in range(len(sensor_data.ranges)):
 
-		if index < 10:
+		if index < kOutterSamples:
 			leftMean = leftMean + sensor_data.ranges[index]
 			leftSamples = leftSamples + 1
-		elif index >= len(sensor_data.ranges) - 10:
+		elif index >= len(sensor_data.ranges) - kOutterSamples:
 			rightMean = rightMean + sensor_data.ranges[index]
 			rightSamples = rightSamples + 1
 
@@ -48,22 +52,22 @@ def callback( sensor_data ):
 	if collision:
 		if gStartCollision == False:
 			if leftMean > rightMean:
-				gTurnDirection = -1	
+				gTurnDirection = -1
+				gDirection = "RIGHT"	
 			else:
 				gTurnDirection = 1
+				gDirection = "LEFT" 
 			gStartCollision = True
 
 		base_data.angular.z = 0.5 * gTurnDirection
-		if gTurnDirection: 
-			direction = "RIGHT" 
-		else: 
-			direction = "LEFT"
-		rospy.loginfo("Wall ahead. Turning " + direction)
+
+		rospy.loginfo("Wall ahead. Turning " + gDirection)
 	else:
 		gStartCollision = False
 		base_data.linear.x = 0.3
-		base_data.angular.z = sensor_data.angle_min + sensor_data.angle_increment*highestIndex
-		rospy.loginfo("Going straight");	
+		angle = sensor_data.angle_min + sensor_data.angle_increment*highestIndex
+		base_data.angular.z = angle
+		rospy.loginfo("Going towards %f",angle);	
 	
         pub.publish( base_data  )
 
