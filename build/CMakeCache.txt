@@ -239,6 +239,12 @@ catkin_DIR:PATH=/opt/ros/hydro/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/hydro/share/cpp_common/cmake
 
 //Value Computed by CMake
+ex01_mayer2_BINARY_DIR:STATIC=/data/private/robot/inteligentrobotics/build/ex01_mayer2
+
+//Value Computed by CMake
+ex01_mayer2_SOURCE_DIR:STATIC=/data/private/robot/inteligentrobotics/src/ex01_mayer2
+
+//Value Computed by CMake
 ex01_mayer_BINARY_DIR:STATIC=/data/private/robot/inteligentrobotics/build/ex01_mayer
 
 //Value Computed by CMake
@@ -394,7 +400,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

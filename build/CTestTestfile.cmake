@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(ex01_mayer)
+SUBDIRS(ex01_mayer2)

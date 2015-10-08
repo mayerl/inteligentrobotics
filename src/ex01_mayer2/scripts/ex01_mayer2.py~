@@ -24,17 +24,22 @@ def callback( sensor_data ):
 	leftSamples = 0
 	rightMean = 0
 	rightSamples = 0
+	highestIndex = 0
 	base_data = Twist()
 	
 	for index in range(len(sensor_data.ranges)):
-		if index < len(sensor_data.ranges)/2:
+
+		if index < 10:
 			leftMean = leftMean + sensor_data.ranges[index]
 			leftSamples = leftSamples + 1
-		else:
+		elif index >= len(sensor_data.ranges) - 10:
 			rightMean = rightMean + sensor_data.ranges[index]
 			rightSamples = rightSamples + 1
 
-		if sensor_data.ranges[index] < 0.5:
+		if sensor_data.ranges[index] > sensor_data.ranges[highestIndex]:
+			highestIndex = index
+
+		if sensor_data.ranges[index] < 0.75:
 			collision = True
 
 	leftMean = leftMean / leftSamples
@@ -57,7 +62,7 @@ def callback( sensor_data ):
 	else:
 		gStartCollision = False
 		base_data.linear.x = 0.3
-		base_data.angular.z = random.uniform(-0.2,0.2)
+		base_data.angular.z = sensor_data.angle_min + sensor_data.angle_increment*highestIndex
 		rospy.loginfo("Going straight");	
 	
         pub.publish( base_data  )

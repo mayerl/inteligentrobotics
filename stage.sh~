@@ -1,0 +1,2 @@
+#! /bin/bash
+sudo rosrun stage_ros stageros /data/private/ros/socspioneer/lgfloor.world

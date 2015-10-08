@@ -34,7 +34,7 @@ def callback( sensor_data ):
 			rightMean = rightMean + sensor_data.ranges[index]
 			rightSamples = rightSamples + 1
 
-		if sensor_data.ranges[index] < 0.3:
+		if sensor_data.ranges[index] < 0.5:
 			collision = True
 
 	leftMean = leftMean / leftSamples
@@ -57,6 +57,7 @@ def callback( sensor_data ):
 	else:
 		gStartCollision = False
 		base_data.linear.x = 0.3
+		base_data.angular.z = random.uniform(-0.2,0.2)
 		rospy.loginfo("Going straight");	
 	
         pub.publish( base_data  )

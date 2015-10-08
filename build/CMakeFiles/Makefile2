@@ -362,6 +362,21 @@ clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory ex01_mayer2
+
+# Convenience name for "all" pass in the directory.
+ex01_mayer2/all:
+.PHONY : ex01_mayer2/all
+
+# Convenience name for "clean" pass in the directory.
+ex01_mayer2/clean:
+.PHONY : ex01_mayer2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ex01_mayer2/preinstall:
+.PHONY : ex01_mayer2/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
