@@ -1,0 +1,9 @@
+/data/private/robot/inteligentrobotics/build/CMakeFiles/clean_test_results.dir
+/data/private/robot/inteligentrobotics/build/CMakeFiles/doxygen.dir
+/data/private/robot/inteligentrobotics/build/gtest/CMakeFiles/gtest.dir
+/data/private/robot/inteligentrobotics/build/gtest/CMakeFiles/gtest_main.dir
+/data/private/robot/inteligentrobotics/build/CMakeFiles/run_tests.dir
+/data/private/robot/inteligentrobotics/build/ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/data/private/robot/inteligentrobotics/build/ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/data/private/robot/inteligentrobotics/build/ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir
+/data/private/robot/inteligentrobotics/build/CMakeFiles/tests.dir

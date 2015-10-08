@@ -1,0 +1,8 @@
+prefix=/data/private/robot/inteligentrobotics/devel
+
+Name: ex01_mayer
+Description: Description of ex01_mayer
+Version: 0.0.0
+Cflags: 
+Libs: -L/data/private/robot/inteligentrobotics/devel/lib 
+Requires: 
