@@ -89,6 +89,7 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/data/private/robot/inteligentrobotics/build/gtest/cmake_install.cmake")
+  INCLUDE("/data/private/robot/inteligentrobotics/build/ex01_ali/cmake_install.cmake")
   INCLUDE("/data/private/robot/inteligentrobotics/build/ex01_mayer/cmake_install.cmake")
   INCLUDE("/data/private/robot/inteligentrobotics/build/ex01_mayer2/cmake_install.cmake")
 

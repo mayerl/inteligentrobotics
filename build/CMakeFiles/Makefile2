@@ -252,6 +252,116 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory ex01_ali
+
+# Convenience name for "all" pass in the directory.
+ex01_ali/all:
+.PHONY : ex01_ali/all
+
+# Convenience name for "clean" pass in the directory.
+ex01_ali/clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+ex01_ali/clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+ex01_ali/clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : ex01_ali/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ex01_ali/preinstall:
+.PHONY : ex01_ali/preinstall
+
+#=============================================================================
+# Target rules for target ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_cpp"
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_lisp"
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_py"
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory ex01_mayer
 
 # Convenience name for "all" pass in the directory.
@@ -259,107 +369,12 @@ ex01_mayer/all:
 .PHONY : ex01_mayer/all
 
 # Convenience name for "clean" pass in the directory.
-ex01_mayer/clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-ex01_mayer/clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-ex01_mayer/clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+ex01_mayer/clean:
 .PHONY : ex01_mayer/clean
 
 # Convenience name for "preinstall" pass in the directory.
 ex01_mayer/preinstall:
 .PHONY : ex01_mayer/preinstall
-
-#=============================================================================
-# Target rules for target ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/private/robot/inteligentrobotics/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory ex01_mayer2
