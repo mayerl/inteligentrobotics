@@ -8,13 +8,19 @@
 # @author Claudio Zito, Marco Becerra
 import rospy
 import random
+import math
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 
 gStartCollision = False
 gTurnDirection = 0
-kOutterSamples = 20
 gDirection = ""
+
+kMaximumReading = 20
+kMinimumReading = 0.3
+kOutterSamples = 50
+kRobotSpeed = 0.3
+kRangeAccuracy = 20
 
 def callback( sensor_data ):
 	global gStartCollision
@@ -28,30 +34,49 @@ def callback( sensor_data ):
 	leftSamples = 0
 	rightMean = 0
 	rightSamples = 0
-	highestIndex = 0
+	turningAngle = 0
+	readingSum = 0
 	base_data = Twist()
+
+	k = 0
+	reading = []
+	angles = []
 	
 	for index in range(len(sensor_data.ranges)):
 
-		if index < kOutterSamples:
-			leftMean = leftMean + sensor_data.ranges[index]
-			leftSamples = leftSamples + 1
-		elif index >= len(sensor_data.ranges) - kOutterSamples:
-			rightMean = rightMean + sensor_data.ranges[index]
-			rightSamples = rightSamples + 1
+		if math.isinf(sensor_data.ranges[index]) or math.isnan(sensor_data.ranges[index]):
+			continue
+		else:
+			reading.append(sensor_data.ranges[index])
+			angles.append(sensor_data.angle_min + sensor_data.angle_increment*index)
 
-		if sensor_data.ranges[index] > sensor_data.ranges[highestIndex]:
-			highestIndex = index
-
-		if sensor_data.ranges[index] < 0.5:
+		if reading[k] < kMinimumReading:
 			collision = True
+
+
+		k = k+1
+
+	for index in range(len(reading)):
+
+		if index < kOutterSamples:
+			rightMean = rightMean + reading[index]
+			rightSamples = rightSamples + 1
+		elif index >= len(reading) - kOutterSamples:
+			leftMean = leftMean + reading[index]
+			leftSamples = leftSamples + 1
+
+		turningAngle = turningAngle + angles[index] * reading[index]
+		readingSum = readingSum + reading[index]
+
+	#rospy.loginfo("highestIndex: %d",highestIndex)
 
 	leftMean = leftMean / leftSamples
 	rightMean = rightMean / rightSamples
+	turningAngle = turningAngle / readingSum
 
 	if collision:
 		if gStartCollision == False:
-			if leftMean > rightMean:
+			if rightMean > leftMean:
 				gTurnDirection = -1
 				gDirection = "RIGHT"	
 			else:
@@ -59,15 +84,16 @@ def callback( sensor_data ):
 				gDirection = "LEFT" 
 			gStartCollision = True
 
-		base_data.angular.z = 0.5 * gTurnDirection
+		base_data.angular.z = kRobotSpeed * gTurnDirection
 
 		rospy.loginfo("Wall ahead. Turning " + gDirection)
 	else:
 		gStartCollision = False
-		base_data.linear.x = 0.3
-		angle = sensor_data.angle_min + sensor_data.angle_increment*highestIndex
+		base_data.linear.x = kRobotSpeed
+		angle = turningAngle		
 		base_data.angular.z = angle
-		rospy.loginfo("Going towards %f",angle);	
+		rospy.loginfo("Going towards %f",angle);
+		#rospy.loginfo("Highest index: %d",highestIndex);	
 	
         pub.publish( base_data  )
 
