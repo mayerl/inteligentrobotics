@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/data/private/robot/inteligentrobotics/build"
+export ROS_PACKAGE_PATH="/data/private/robot/inteligentrobotics/src:/data/private/robot/robotics/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks"

@@ -1,0 +1,8 @@
+prefix=/data/private/robot/inteligentrobotics/devel
+
+Name: explore_max
+Description: Description of explore_max
+Version: 0.0.0
+Cflags: 
+Libs: -L/data/private/robot/inteligentrobotics/devel/lib 
+Requires: 

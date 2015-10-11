@@ -14,9 +14,13 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "ex01_mayer/catkin_generated/ordered_paths.cmake"
   "ex01_mayer/catkin_generated/package.cmake"
+  "explore_max/catkin_generated/ordered_paths.cmake"
+  "explore_max/catkin_generated/package.cmake"
   "/data/private/robot/inteligentrobotics/src/CMakeLists.txt"
   "/data/private/robot/inteligentrobotics/src/ex01_mayer/CMakeLists.txt"
   "/data/private/robot/inteligentrobotics/src/ex01_mayer/package.xml"
+  "/data/private/robot/inteligentrobotics/src/explore_max/CMakeLists.txt"
+  "/data/private/robot/inteligentrobotics/src/explore_max/package.xml"
   "/opt/ros/hydro/share/catkin/cmake/../package.xml"
   "/opt/ros/hydro/share/catkin/cmake/all.cmake"
   "/opt/ros/hydro/share/catkin/cmake/assert.cmake"
@@ -123,6 +127,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ex01_mayer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "explore_max/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

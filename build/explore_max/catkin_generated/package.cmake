@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "explore_max")
+set(explore_max_MAINTAINER "robot <robot@todo.todo>")
+set(explore_max_DEPRECATED "")
+set(explore_max_VERSION "0.0.0")
+set(explore_max_BUILD_DEPENDS "rospy" "std_msgs")
+set(explore_max_RUN_DEPENDS "rospy" "std_msgs")
+set(explore_max_BUILDTOOL_DEPENDS "catkin")
