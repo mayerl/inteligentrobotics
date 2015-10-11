@@ -234,7 +234,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -247,7 +247,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -260,7 +260,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Help Target

@@ -146,48 +146,6 @@ depend:
 	cd /data/private/robot/inteligentrobotics/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,9 +158,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 .PHONY : help
 

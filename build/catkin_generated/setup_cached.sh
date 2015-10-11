@@ -7,5 +7,14 @@
 # new environment variables
 
 # modified environment variables
+export CATKIN_TEST_RESULTS_DIR="/data/private/robot/inteligentrobotics/build/test_results"
+export CMAKE_PREFIX_PATH="/data/private/robot/inteligentrobotics/devel:$CMAKE_PREFIX_PATH"
+export CPATH="/data/private/robot/inteligentrobotics/devel/include:$CPATH"
+export LD_LIBRARY_PATH="/data/private/robot/inteligentrobotics/devel/lib:$LD_LIBRARY_PATH"
+export PATH="/data/private/robot/inteligentrobotics/devel/bin:$PATH"
+export PKG_CONFIG_PATH="/data/private/robot/inteligentrobotics/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/data/private/robot/inteligentrobotics/build"
-export ROS_PACKAGE_PATH="/data/private/robot/inteligentrobotics/src:/data/private/robot/robotics/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks"
+export PYTHONPATH="/data/private/robot/inteligentrobotics/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/data/private/robot/inteligentrobotics/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/data/private/robot/inteligentrobotics/src:$ROS_PACKAGE_PATH"
+export ROS_TEST_RESULTS_DIR="/data/private/robot/inteligentrobotics/build/test_results"
