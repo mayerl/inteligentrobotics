@@ -20,7 +20,6 @@ kDistanceToWall = 0.5
 kSideSamples = 50
 kLinearSpeed = 0.2
 kAngularSpeed = 0.3
-kMaxRange = 6.0
 
 def callback( sensor_data ):
 	global gStartCollision
@@ -46,7 +45,7 @@ def callback( sensor_data ):
 		if math.isnan(sensor_data.ranges[index]):
 			continue
 		elif math.isinf(sensor_data.ranges[index]):
-			reading.append(kMaxRange)
+			reading.append(6.0)
 			angles.append(sensor_data.angle_min + sensor_data.angle_increment*index)
 		else:
 			reading.append(sensor_data.ranges[index])
@@ -60,10 +59,10 @@ def callback( sensor_data ):
 
 	for index in range(len(reading)):
 
-		if index < kSideSamples:
+		if angles[index] < 0:
 			rightMean = rightMean + reading[index]
 			rightSamples = rightSamples + 1
-		elif index >= len(reading) - kSideSamples:
+		else:
 			leftMean = leftMean + reading[index]
 			leftSamples = leftSamples + 1
 
@@ -73,6 +72,9 @@ def callback( sensor_data ):
 	leftMean = leftMean / leftSamples
 	rightMean = rightMean / rightSamples
 	turningAngle = turningAngle / readingSum
+
+	#rospy.loginfo("Right mean: %f",rightMean)
+	#rospy.loginfo("Left mean: %f",leftMean)
 
 	if collision:
 		if gStartCollision == False:
