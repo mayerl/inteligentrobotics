@@ -20,6 +20,7 @@ kDistanceToWall = 0.5
 kSideSamples = 50
 kLinearSpeed = 0.2
 kAngularSpeed = 0.3
+kMaxRange = 6.0
 
 def callback( sensor_data ):
 	global gStartCollision
@@ -45,7 +46,7 @@ def callback( sensor_data ):
 		if math.isnan(sensor_data.ranges[index]):
 			continue
 		elif math.isinf(sensor_data.ranges[index]):
-			reading.append(6.0)
+			reading.append(kMaxRange)
 			angles.append(sensor_data.angle_min + sensor_data.angle_increment*index)
 		else:
 			reading.append(sensor_data.ranges[index])
