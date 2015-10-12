@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ex01_ali")
+set(ex01_ali_MAINTAINER "robot <robot@todo.todo>")
+set(ex01_ali_DEPRECATED "")
+set(ex01_ali_VERSION "0.0.0")
+set(ex01_ali_BUILD_DEPENDS "rospy" "std_msgs")
+set(ex01_ali_RUN_DEPENDS "rospy" "std_msgs")
+set(ex01_ali_BUILDTOOL_DEPENDS "catkin")
