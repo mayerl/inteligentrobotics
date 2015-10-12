@@ -12,15 +12,29 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/CMakeSystem.cmake"
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/order_packages.cmake"
+  "ex01_ali/catkin_generated/ordered_paths.cmake"
+  "ex01_ali/catkin_generated/package.cmake"
   "ex01_mayer/catkin_generated/ordered_paths.cmake"
   "ex01_mayer/catkin_generated/package.cmake"
+<<<<<<< HEAD
   "explore_max/catkin_generated/ordered_paths.cmake"
   "explore_max/catkin_generated/package.cmake"
+=======
+  "ex01_mayer2/catkin_generated/ordered_paths.cmake"
+  "ex01_mayer2/catkin_generated/package.cmake"
+>>>>>>> e847e524078873fba8f310664d52eef254c6eed3
   "/data/private/robot/inteligentrobotics/src/CMakeLists.txt"
+  "/data/private/robot/inteligentrobotics/src/ex01_ali/CMakeLists.txt"
+  "/data/private/robot/inteligentrobotics/src/ex01_ali/package.xml"
   "/data/private/robot/inteligentrobotics/src/ex01_mayer/CMakeLists.txt"
   "/data/private/robot/inteligentrobotics/src/ex01_mayer/package.xml"
+<<<<<<< HEAD
   "/data/private/robot/inteligentrobotics/src/explore_max/CMakeLists.txt"
   "/data/private/robot/inteligentrobotics/src/explore_max/package.xml"
+=======
+  "/data/private/robot/inteligentrobotics/src/ex01_mayer2/CMakeLists.txt"
+  "/data/private/robot/inteligentrobotics/src/ex01_mayer2/package.xml"
+>>>>>>> e847e524078873fba8f310664d52eef254c6eed3
   "/opt/ros/hydro/share/catkin/cmake/../package.xml"
   "/opt/ros/hydro/share/catkin/cmake/all.cmake"
   "/opt/ros/hydro/share/catkin/cmake/assert.cmake"
@@ -126,8 +140,13 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ex01_ali/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ex01_mayer/CMakeFiles/CMakeDirectoryInformation.cmake"
+<<<<<<< HEAD
   "explore_max/CMakeFiles/CMakeDirectoryInformation.cmake"
+=======
+  "ex01_mayer2/CMakeFiles/CMakeDirectoryInformation.cmake"
+>>>>>>> e847e524078873fba8f310664d52eef254c6eed3
   )
 
 # Dependency information for all targets:
@@ -138,7 +157,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tests.dir/DependInfo.cmake"
   "gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "ex01_mayer/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake"
-  "ex01_mayer/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
-  "ex01_mayer/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "ex01_ali/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake"
+  "ex01_ali/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
+  "ex01_ali/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
   )

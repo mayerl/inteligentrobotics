@@ -34,11 +34,21 @@ def is_collision(ranges) :
 
     return (total / 5) < 2
 
+class MVector :
+    def __init__(self, magnitude, direction) :
+        self.magnitude = magnitude
+        self.direction = direction
+    def getMagnitude(self):
+        return self.magnitude
+    def getDirection(self):
+        return self.direction
 
 def callback( sensor_data ) :
     #sensor_data (LaserScan data type) has the laser scanner data
     #base_data (Twist data type) created to control the base robot
     speed = 0.4
+    orientation = 0
+    angle = 0
 
     base_data = Twist()
 
@@ -47,10 +57,14 @@ def callback( sensor_data ) :
     if is_collision(ranges) :
         base_data.linear.x = 0
         base_data.angular.z = 10
+        orientation = (orientation + 10) % 360
+        angle = (angle + 10) % 360
         pub.publish(base_data)
     else :
         base_data.linear.x = speed
         base_data.angular.z = 0
+        
+        angle = 0
         pub.publish(base_data)
 
 

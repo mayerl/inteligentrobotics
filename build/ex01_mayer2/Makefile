@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/private/robot/inteligentrobotics/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles /data/private/robot/inteligentrobotics/build/ex01_mayer/CMakeFiles/progress.marks
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/all
+	cd /data/private/robot/inteligentrobotics/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles /data/private/robot/inteligentrobotics/build/ex01_mayer2/CMakeFiles/progress.marks
+	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer2/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data/private/robot/inteligentrobotics/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/clean
+	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer2/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,12 +133,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/preinstall
+	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer/preinstall
+	cd /data/private/robot/inteligentrobotics/build && $(MAKE) -f CMakeFiles/Makefile2 ex01_mayer2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends

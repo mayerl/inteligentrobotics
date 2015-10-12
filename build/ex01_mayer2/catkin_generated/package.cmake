@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ex01_mayer2")
+set(ex01_mayer2_MAINTAINER "robot <robot@todo.todo>")
+set(ex01_mayer2_DEPRECATED "")
+set(ex01_mayer2_VERSION "0.0.0")
+set(ex01_mayer2_BUILD_DEPENDS "rospy" "std_msgs")
+set(ex01_mayer2_RUN_DEPENDS "rospy" "std_msgs")
+set(ex01_mayer2_BUILDTOOL_DEPENDS "catkin")

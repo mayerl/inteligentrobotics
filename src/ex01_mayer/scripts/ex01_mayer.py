@@ -34,7 +34,7 @@ def callback( sensor_data ):
 			rightMean = rightMean + sensor_data.ranges[index]
 			rightSamples = rightSamples + 1
 
-		if sensor_data.ranges[index] < 0.3:
+		if sensor_data.ranges[index] < 0.5:
 			collision = True
 
 	leftMean = leftMean / leftSamples
@@ -43,7 +43,7 @@ def callback( sensor_data ):
 	if collision:
 		if gStartCollision == False:
 			if leftMean > rightMean:
-				gTurnDirection = -1
+				gTurnDirection = -1	
 			else:
 				gTurnDirection = 1
 			gStartCollision = True
@@ -56,9 +56,16 @@ def callback( sensor_data ):
 		rospy.loginfo("Wall ahead. Turning " + direction)
 	else:
 		gStartCollision = False
+<<<<<<< HEAD
 		base_data.linear.x = 0.2
 		rospy.loginfo("Going straight");
 
+=======
+		base_data.linear.x = 0.3
+		base_data.angular.z = random.uniform(-0.2,0.2)
+		rospy.loginfo("Going straight");	
+	
+>>>>>>> e847e524078873fba8f310664d52eef254c6eed3
         pub.publish( base_data  )
 
 if __name__ == '__main__':
