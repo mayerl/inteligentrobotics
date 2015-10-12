@@ -1,0 +1,8 @@
+prefix=/data/private/robot/inteligentrobotics/install
+
+Name: ex01_ali
+Description: Description of ex01_ali
+Version: 0.0.0
+Cflags: 
+Libs: -L/data/private/robot/inteligentrobotics/install/lib 
+Requires: 
